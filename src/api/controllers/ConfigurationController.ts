@@ -26,8 +26,8 @@ export class AirportMatrixController {
 
 
     @Post()
-    public post(): Promise<any> {
-        return this.configurationService.create();
+    public post(@Body() body: Configuration): Promise<any> {
+        return this.configurationService.create(body);
     }
 
     @Put('/:id')
