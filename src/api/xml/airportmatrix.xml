@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:impl="http://impl.soap.ws.crane.hititcs.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <impl:GetAirPortMatrix>
+          <AirPortMatrixRequest>
+            <clientInformation>
+               {{clientInfo}}
+            </clientInformation>
+         </AirPortMatrixRequest>
+      </impl:GetAirPortMatrix>
+   </soapenv:Body>
+</soapenv:Envelope>
